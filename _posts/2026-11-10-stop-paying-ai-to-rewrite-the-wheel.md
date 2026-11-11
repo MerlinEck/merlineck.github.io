@@ -10,7 +10,7 @@ The headlines this year tell the story. Companies on enterprise ChatGPT and Clau
 
 Rationing treats the symptom. The cause is how we deploy these tools. We've reached the point on the maturity curve where "the AI can do it from scratch" has quietly become "the AI does it from scratch, every time, for every user." At scale, that is a very expensive habit.
 
-## Nobody builds a deck from scratch by hand
+## You don't build decks from scratch, why should AI?
 
 Think about the last time you made a PowerPoint presentation yourself. You almost certainly didn't start from a blank slide.
 
