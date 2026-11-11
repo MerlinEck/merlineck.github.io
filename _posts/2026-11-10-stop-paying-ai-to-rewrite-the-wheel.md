@@ -2,6 +2,8 @@
 layout: post
 title: "Stop paying AI to rewrite the wheel"
 description: "Companies aren't overspending on AI because the tools are too capable. They're paying it to rebuild the same work from scratch, over and over."
+image: /assets/images/rewrite-the-wheel-hero.jpg
+image_alt: "A factory conveyor belt carries a row of identical finished wheels while a robot in the foreground chisels a lumpy stone wheel from scratch, under a wall display of rising tokens spent."
 ---
 
 Companies aren't overspending on AI because the tools are too capable. They're overspending because they pay the AI to rebuild the same work from scratch, over and over.

@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe7ee"/><stop offset="1" stop-color="#c9d4de"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9b6c2"/><stop offset="1" stop-color="#8d9ba8"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdfcf4"/><stop offset="1" stop-color="#e9f1f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#fff6d6" stop-opacity="0.9"/><stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9b2a6"/><stop offset="1" stop-color="#857d71"/>
+    </linearGradient>
+    <linearGradient id="robot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#48b5c2"/><stop offset="1" stop-color="#2f8f9c"/>
+    </linearGradient>
+    <symbol id="wheel" viewBox="-60 -60 120 120" overflow="visible">
+      <circle r="56" fill="#2b3137"/>
+      <circle r="56" fill="none" stroke="#3d454d" stroke-width="5" stroke-dasharray="7 6"/>
+      <circle r="38" fill="#cfd8de"/>
+      <circle r="38" fill="none" stroke="#9fadb8" stroke-width="3"/>
+      <g stroke="#8c9aa6" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="-33"/>
+        <line x1="0" y1="0" x2="31.4" y2="-10.2"/>
+        <line x1="0" y1="0" x2="19.4" y2="26.7"/>
+        <line x1="0" y1="0" x2="-19.4" y2="26.7"/>
+        <line x1="0" y1="0" x2="-31.4" y2="-10.2"/>
+      </g>
+      <circle r="12" fill="#f2a93b"/>
+      <circle r="4" fill="#b8741a"/>
+    </symbol>
+    <symbol id="roller" viewBox="-12 -12 24 24" overflow="visible">
+      <circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/>
+    </symbol>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <!-- Windows -->
+  <g>
+    <g transform="translate(60,50)">
+      <rect width="400" height="250" rx="4" fill="url(#win)" stroke="#9eacb8" stroke-width="10"/>
+      <path d="M100 0V250M200 0V250M300 0V250M0 83H400M0 166H400" stroke="#9eacb8" stroke-width="6"/>
+    </g>
+    <g transform="translate(600,50)">
+      <rect width="400" height="250" rx="4" fill="url(#win)" stroke="#9eacb8" stroke-width="10"/>
+      <path d="M100 0V250M200 0V250M300 0V250M0 83H400M0 166H400" stroke="#9eacb8" stroke-width="6"/>
+    </g>
+  </g>
+  <!-- Token counter on the wall -->
+  <g transform="translate(1110,70)">
+    <rect width="420" height="150" rx="14" fill="#2a2f36"/>
+    <rect x="14" y="14" width="392" height="122" rx="8" fill="#14181d"/>
+    <text x="210" y="52" text-anchor="middle" font-family="Courier New, monospace" font-weight="bold" font-size="22" fill="#8fa3b3" letter-spacing="4">TOKENS SPENT</text>
+    <text x="210" y="112" text-anchor="middle" font-family="Courier New, monospace" font-weight="bold" font-size="54" fill="#ff5a4e">4,812,077</text>
+    <circle cx="384" cy="34" r="7" fill="#ff5a4e"/>
+    <line x1="80" y1="0" x2="80" y2="-70" stroke="#5b6873" stroke-width="5"/>
+    <line x1="340" y1="0" x2="340" y2="-70" stroke="#5b6873" stroke-width="5"/>
+  </g>
+
+  <!-- Hanging lamps -->
+  <g>
+    <line x1="530" y1="0" x2="530" y2="60" stroke="#5b6873" stroke-width="4"/>
+    <path d="M495 85 L530 55 L565 85 Z" fill="#3b4650"/>
+    <ellipse cx="530" cy="85" rx="35" ry="6" fill="#ffe9a8"/>
+    <path d="M495 88 L380 420 H680 L565 88 Z" fill="url(#glow)" opacity="0.5"/>
+  </g>
+
+  <!-- Floor -->
+  <rect y="640" width="1600" height="260" fill="url(#floor)"/>
+  <rect y="636" width="1600" height="8" fill="#7f8c98"/>
+  <g stroke="#9aa7b3" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="720" x2="1600" y2="720"/>
+    <line x1="0" y1="820" x2="1600" y2="820"/>
+  </g>
+
+  <!-- Wheel-making machine (left) -->
+  <g>
+    <rect x="-10" y="250" width="230" height="390" rx="10" fill="#e08a2e"/>
+    <rect x="-10" y="250" width="230" height="40" rx="10" fill="#c46f18"/>
+    <rect x="20" y="320" width="150" height="90" rx="8" fill="#2a2f36"/>
+    <circle cx="55" cy="365" r="16" fill="#5fd38a"/>
+    <circle cx="100" cy="365" r="16" fill="#5fd38a"/>
+    <circle cx="145" cy="365" r="16" fill="#f2c94c"/>
+    <rect x="130" y="440" width="100" height="120" rx="6" fill="#1d2228"/>
+    <g stroke="#c46f18" stroke-width="8">
+      <line x1="10" y1="600" x2="110" y2="600"/>
+      <line x1="10" y1="615" x2="110" y2="615"/>
+    </g>
+    <path d="M60 250 V200 H140 V250" fill="none" stroke="#5b6873" stroke-width="12"/>
+  </g>
+
+  <!-- Conveyor -->
+  <g>
+    <!-- legs -->
+    <g fill="#4a5661">
+      <rect x="300" y="520" width="18" height="122"/>
+      <rect x="640" y="520" width="18" height="122"/>
+      <rect x="980" y="520" width="18" height="122"/>
+      <rect x="1320" y="520" width="18" height="122"/>
+    </g>
+    <rect x="200" y="476" width="1420" height="46" rx="23" fill="#2c343c"/>
+    <rect x="200" y="470" width="1420" height="14" rx="7" fill="#1e252b"/>
+    <g id="rollers">
+      <g transform="translate(248 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(348 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(448 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g>
+      <g transform="translate(548 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(648 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(748 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g>
+      <g transform="translate(848 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(948 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(1048 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g>
+      <g transform="translate(1148 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(1248 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(1348 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g>
+      <g transform="translate(1448 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g><g transform="translate(1548 499)"><circle r="11" fill="#7d8b97"/><circle r="4" fill="#4a5661"/></g>
+    </g>
+    <!-- motion arrows on belt side -->
+    <g fill="#f2c94c" opacity="0.85">
+      <path d="M414 512 l-14 -6 v12 z"/><path d="M814 512 l-14 -6 v12 z"/><path d="M1214 512 l-14 -6 v12 z"/>
+    </g>
+  </g>
+
+  <!-- Wheels on belt: identical, rolling right -->
+  <g>
+    <use href="#wheel" x="190" y="352" width="120" height="120" transform="rotate(0 250 412)"/>
+    <use href="#wheel" x="340" y="352" width="120" height="120" transform="rotate(14 400 412)"/>
+    <use href="#wheel" x="490" y="352" width="120" height="120" transform="rotate(28 550 412)"/>
+    <use href="#wheel" x="640" y="352" width="120" height="120" transform="rotate(42 700 412)"/>
+    <use href="#wheel" x="790" y="352" width="120" height="120" transform="rotate(56 850 412)"/>
+    <use href="#wheel" x="940" y="352" width="120" height="120" transform="rotate(70 1000 412)"/>
+    <use href="#wheel" x="1090" y="352" width="120" height="120" transform="rotate(12 1150 412)"/>
+    <use href="#wheel" x="1240" y="352" width="120" height="120" transform="rotate(26 1300 412)"/>
+    <use href="#wheel" x="1390" y="352" width="120" height="120" transform="rotate(40 1450 412)"/>
+    <use href="#wheel" x="1540" y="352" width="120" height="120" transform="rotate(54 1600 412)"/>
+  </g>
+
+  <!-- Floor shadows -->
+  <g fill="#5d6b78" opacity="0.35">
+    <ellipse cx="1080" cy="878" rx="270" ry="16"/>
+    <ellipse cx="1430" cy="872" rx="120" ry="14"/>
+    <ellipse cx="760" cy="868" rx="150" ry="12"/>
+  </g>
+
+  <!-- Failed attempts on the floor -->
+  <g>
+    <!-- square wheel -->
+    <g transform="rotate(-8 680 815)">
+      <rect x="628" y="763" width="104" height="104" rx="10" fill="url(#stone)" stroke="#6e675d" stroke-width="4"/>
+      <circle cx="680" cy="815" r="12" fill="#6e675d"/>
+      <path d="M645 785 l18 10 M705 840 l14 -12 M650 845 l10 -6" stroke="#6e675d" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- triangle wheel -->
+    <g transform="rotate(10 830 825)">
+      <path d="M830 762 L885 862 H775 Z" fill="url(#stone)" stroke="#6e675d" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="830" cy="828" r="10" fill="#6e675d"/>
+      <path d="M800 845 l14 -10 M845 800 l10 8" stroke="#6e675d" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Workbench -->
+  <g>
+    <rect x="880" y="712" width="20" height="160" fill="#7a4e2d"/>
+    <rect x="1250" y="712" width="20" height="160" fill="#7a4e2d"/>
+    <rect x="895" y="800" width="360" height="14" fill="#6a4226"/>
+    <rect x="860" y="694" width="430" height="26" rx="4" fill="#a8693a"/>
+    <rect x="860" y="716" width="430" height="8" fill="#7a4e2d"/>
+  </g>
+
+  <!-- Blueprint on bench -->
+  <g transform="rotate(-6 945 685)">
+    <rect x="890" y="668" width="110" height="30" fill="#3d7fc1"/>
+    <circle cx="945" cy="683" r="11" fill="none" stroke="#e6f0fa" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="972" y="689" font-family="Courier New, monospace" font-size="12" fill="#e6f0fa">v47</text>
+  </g>
+
+  <!-- The stone wheel being carved from scratch -->
+  <g>
+    <path d="M1090 545 L1140 552 L1172 584 L1180 628 L1165 668 L1128 694 L1078 696 L1036 676 L1012 636 L1016 590 L1044 558 Z"
+          fill="url(#stone)" stroke="#6e675d" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="1096" cy="622" r="16" fill="#6e675d"/>
+    <circle cx="1096" cy="622" r="7" fill="#544e46"/>
+    <g stroke="#6e675d" stroke-width="3.5" stroke-linecap="round" fill="none">
+      <path d="M1048 590 l20 8"/><path d="M1120 575 l-6 18"/><path d="M1140 650 l16 -6"/>
+      <path d="M1050 650 l14 -14"/><path d="M1100 670 l4 -14"/>
+    </g>
+  </g>
+
+  <!-- Flying chips and sparks -->
+  <g fill="#9d958a">
+    <path d="M1205 548 l10 -4 l2 9 z"/><path d="M1232 530 l7 -6 l5 8 z"/><path d="M1190 520 l9 2 l-4 8 z"/>
+    <path d="M1250 560 l8 0 l-3 7 z"/><path d="M1180 690 l9 -3 l1 8 z"/><path d="M1215 700 l7 -2 l-1 6 z"/>
+  </g>
+  <g stroke="#ffcf4d" stroke-width="4" stroke-linecap="round">
+    <line x1="1192" y1="575" x2="1212" y2="560"/>
+    <line x1="1196" y1="592" x2="1222" y2="590"/>
+    <line x1="1190" y1="606" x2="1210" y2="618"/>
+  </g>
+
+  <!-- Robot -->
+  <g>
+    <!-- legs -->
+    <rect x="1385" y="760" width="30" height="100" rx="8" fill="#5b6873"/>
+    <rect x="1450" y="760" width="30" height="100" rx="8" fill="#4a5661"/>
+    <rect x="1365" y="852" width="62" height="20" rx="8" fill="#2c343c"/>
+    <rect x="1432" y="852" width="62" height="20" rx="8" fill="#2c343c"/>
+
+    <!-- back arm (hammer) -->
+    <path d="M1400 620 Q1340 600 1320 540" fill="none" stroke="#2f8f9c" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="1400" cy="620" r="16" fill="#2a7581"/>
+
+    <!-- body -->
+    <rect x="1350" y="590" width="160" height="185" rx="22" fill="url(#robot)"/>
+    <rect x="1375" y="625" width="110" height="70" rx="10" fill="#1d2a30"/>
+    <text x="1430" y="672" text-anchor="middle" font-family="Courier New, monospace" font-weight="bold" font-size="34" fill="#ff5a4e">$$$</text>
+    <circle cx="1395" cy="730" r="9" fill="#f2c94c"/>
+    <circle cx="1425" cy="730" r="9" fill="#ff5a4e"/>
+    <rect x="1445" y="722" width="40" height="16" rx="5" fill="#1d2a30"/>
+
+    <!-- neck + head -->
+    <rect x="1410" y="560" width="40" height="36" fill="#4a5661"/>
+    <line x1="1450" y1="470" x2="1462" y2="430" stroke="#4a5661" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="1463" cy="426" r="10" fill="#ff5a4e"/>
+    <rect x="1365" y="462" width="140" height="106" rx="20" fill="url(#robot)"/>
+    <!-- visor facing left -->
+    <rect x="1355" y="490" width="90" height="46" rx="14" fill="#1d2a30"/>
+    <circle cx="1385" cy="513" r="10" fill="#7ff3ff"/>
+    <circle cx="1418" cy="513" r="10" fill="#7ff3ff"/>
+    <!-- focused brow -->
+    <path d="M1370 486 L1400 494 M1408 494 L1436 484" stroke="#1d2a30" stroke-width="6" stroke-linecap="round"/>
+    <!-- ear bolt -->
+    <circle cx="1478" cy="515" r="12" fill="#2a7581"/>
+    <!-- sweat drop -->
+    <path d="M1350 460 q-10 16 0 22 q10 -6 0 -22 z" fill="#8fd3ff"/>
+
+    <!-- hammer -->
+    <g transform="rotate(-30 1318 530)">
+      <rect x="1312" y="450" width="12" height="100" rx="5" fill="#8a5a33"/>
+      <rect x="1286" y="430" width="64" height="32" rx="6" fill="#5b6873"/>
+    </g>
+    <circle cx="1320" cy="535" r="16" fill="#2a7581"/>
+    <!-- motion lines -->
+    <g stroke="#5b6873" stroke-width="4" stroke-linecap="round" opacity="0.6">
+      <path d="M1250 430 q-20 20 -22 48"/><path d="M1270 415 q-24 22 -28 56"/>
+    </g>
+
+    <!-- chisel -->
+    <g transform="rotate(-18 1215 600)">
+      <rect x="1180" y="594" width="70" height="12" rx="3" fill="#aab6bf"/>
+      <rect x="1240" y="590" width="40" height="20" rx="5" fill="#3b4650"/>
+    </g>
+    <!-- front arm (chisel) -->
+    <path d="M1385 630 Q1320 650 1272 596" fill="none" stroke="#48b5c2" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="1385" cy="630" r="17" fill="#3aa2af"/>
+    <circle cx="1268" cy="594" r="16" fill="#3aa2af"/>
+  </g>
+</svg>
