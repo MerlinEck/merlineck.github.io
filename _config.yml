@@ -17,3 +17,4 @@ plugins:
 
 exclude:
   - README.md
+  - merlinslinkedineditor/
