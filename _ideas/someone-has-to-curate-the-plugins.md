@@ -1,9 +1,10 @@
 ---
 title: "Someone has to curate the plugins"
 captured: 2026-11-17
-status: drafting
+status: published
 thesis: "For the effective use of AI assistants like Copilot, Claude, ChatGPT and Cohere, an enterprise needs its own curated plugins, built with the company's processes and integrations in mind, behind a gateway that protects the firm from malicious skills, scripts or plugins and minimizes the supply chain and business continuity risks of public plugins the business starts to rely on."
 source: "Follow-on to last week's post, Stop paying AI to rewrite the wheel (2026-11-10), which promised: \"reusable plugins only save money if someone curates them. That's the governance question ... and will be the subject of a future post.\""
+url: "https://merlineck.github.io/blog/2026/11/24/someone-has-to-curate-the-plugins/"
 ---
 
 ## Hook
